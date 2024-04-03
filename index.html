@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "output"></p>
+    <script>
+    
+    //item1 
+    var nickname = "Sodium";
+    var heightInInches = 72;
+    var weightInKg = 80;
+
+    var heightInFeet = (heightInInches / 12);
+    var remainingInches = heightInInches % 12;
+    var weightInPounds = (weightInKg * 2.20462);
+
+    alert("Name: " + nickname + "\n" +
+      "Height: " + heightInFeet + "\'" + remainingInches + "\"\n" +
+      "Weight: " + weightInPounds + " lbs");
+
+
+    //item2 
+
+      var firstName = prompt("What is your first name? ");
+      var lastName = prompt("What is your last name? ");
+      var birthYear = prompt("What year were you born? ")
+
+      //age
+
+      var age = 2024 - birthYear;
+    
+      
+    //item3
+    
+    var consent = confirm("Do you wish to share your personal information with our site? ")
+    
+    if(consent){
+        document.getElementById('output').innerText = 'Hello, ' + firstName + ' ' + lastName + '! How does it feel to be ' + age + ' years old?';
+
+    }else{
+        alert("User does not wish to share his/her information.");
+    }
+
+
+    </script>
+</body>
+</html>
